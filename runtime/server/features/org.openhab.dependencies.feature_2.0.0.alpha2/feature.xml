@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) 2014-2015 openHAB UG (haftungsbeschraenkt) and others.
+
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+
+-->
+<feature
+      id="org.openhab.dependencies.feature"
+      label="openHAB Dependencies"
+      version="2.0.0.alpha2"
+      provider-name="openHAB.org">
+
+   <description>
+      This features defines all bundles that form the openHAB runtime.
+   </description>
+
+   <copyright>
+      Copyright (c) 2010-2015, openHAB.org &lt;admin@openhab.org&gt;
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="ch.qos.logback.classic"
+         download-size="255"
+         install-size="518"
+         version="1.0.7.v20121108-1250"
+         unpack="false"/>
+
+   <plugin
+         id="ch.qos.logback.slf4j"
+         download-size="10"
+         install-size="16"
+         version="1.0.7.v20121108-1250"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.slf4j.api"
+         download-size="34"
+         install-size="61"
+         version="1.7.2.v20121108-1250"
+         unpack="false"/>
+
+   <plugin
+         id="org.slf4j.log4j"
+         download-size="29"
+         install-size="47"
+         version="1.7.2.v20130115-1340"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.collections"
+         download-size="598"
+         install-size="1211"
+         version="3.2.0.v2013030210310"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.io"
+         download-size="190"
+         install-size="391"
+         version="2.2.0.v201405211200"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.lang"
+         download-size="292"
+         install-size="619"
+         version="2.6.0.v201404270220"
+         unpack="false"/>
+
+   <plugin
+         id="ch.qos.logback.core"
+         download-size="380"
+         install-size="722"
+         version="1.0.7.v20121108-1250"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.cm"
+         download-size="71"
+         install-size="146"
+         version="1.1.0.v20131021-1936"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.event"
+         download-size="31"
+         install-size="57"
+         version="1.3.100.v20140115-1647"
+         unpack="false"/>
+
+   <plugin
+         id="javax.activation"
+         download-size="54"
+         install-size="105"
+         version="1.1.0.v201211130549"
+         unpack="false"/>
+
+   <plugin
+         id="javax.servlet"
+         download-size="103"
+         install-size="203"
+         version="3.1.0.v20140303-1611"
+         unpack="false"/>
+
+   <plugin
+         id="org.antlr.runtime"
+         download-size="209"
+         install-size="444"
+         version="3.2.0.v201101311130"
+         unpack="false"/>
+
+   <plugin
+         id="com.google.inject"
+         download-size="508"
+         install-size="1162"
+         version="3.0.0.v201312141243"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.icu.base"
+         download-size="177"
+         install-size="363"
+         version="52.1.0.v201404171520"
+         unpack="false"/>
+
+   <plugin
+         id="org.slf4j.jcl"
+         download-size="23"
+         install-size="43"
+         version="1.7.2.v20130115-1340"
+         unpack="false"/>
+
+   <plugin
+         id="org.slf4j.jul"
+         download-size="11"
+         install-size="18"
+         version="1.7.2.v20121108-1250"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.ds"
+         download-size="190"
+         install-size="392"
+         version="1.4.200.v20131126-2331"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.util"
+         download-size="76"
+         install-size="139"
+         version="1.0.500.v20130404-1337"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.net"
+         download-size="287"
+         install-size="564"
+         version="3.2.0.v201305141515"
+         unpack="false"/>
+
+   <plugin
+         id="javax.mail"
+         download-size="313"
+         install-size="588"
+         version="1.4.0.v201005080615"
+         unpack="false"/>
+
+   <plugin
+         id="com.google.guava"
+         download-size="1555"
+         install-size="3542"
+         version="10.0.1.v201203051515"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.httpcomponents.httpclient"
+         download-size="613"
+         install-size="1259"
+         version="4.2.6.v201311072007"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.httpcomponents.httpcore"
+         download-size="253"
+         install-size="507"
+         version="4.2.5.v201311072007"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.httpclient"
+         download-size="314"
+         install-size="650"
+         version="3.1.0.v201012070820"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.codec"
+         download-size="251"
+         install-size="504"
+         version="1.6.0.v201305230611"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.exec"
+         download-size="61"
+         install-size="116"
+         version="1.1.0.v201301240602"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.felix.fileinstall"
+         download-size="101"
+         install-size="201"
+         version="3.4.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.launcher"
+         download-size="49"
+         install-size="87"
+         version="1.3.0.v20140415-2008"
+         unpack="false"/>
+
+   <plugin
+         id="javax.xml"
+         download-size="232"
+         install-size="378"
+         version="1.3.4.v201005080400"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.felix.gogo.command"
+         download-size="56"
+         install-size="113"
+         version="0.10.0.v201209301215"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.felix.gogo.runtime"
+         download-size="78"
+         install-size="154"
+         version="0.10.0.v201209301036"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.felix.gogo.shell"
+         download-size="59"
+         install-size="121"
+         version="0.10.0.v201212101605"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.console"
+         download-size="115"
+         install-size="237"
+         version="1.1.0.v20140131-1639"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.config.core"
+         download-size="29"
+         install-size="55"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.core"
+         download-size="103"
+         install-size="194"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.core.autoupdate"
+         download-size="13"
+         install-size="19"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.core.library"
+         download-size="60"
+         install-size="115"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.core.persistence"
+         download-size="13"
+         install-size="19"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.core.scheduler"
+         download-size="685"
+         install-size="751"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.core.scriptengine"
+         download-size="20"
+         install-size="31"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.core.transform"
+         download-size="31"
+         install-size="50"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.io.console"
+         download-size="23"
+         install-size="39"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.io.monitor"
+         download-size="10"
+         install-size="13"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.io.multimedia"
+         download-size="12"
+         install-size="15"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.io.net"
+         download-size="22"
+         install-size="35"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.io.rest"
+         download-size="20"
+         install-size="31"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.io.rest.sitemap"
+         download-size="21"
+         install-size="37"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.io.transport.mqtt"
+         download-size="166"
+         install-size="203"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.model.core"
+         download-size="27"
+         install-size="44"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.model.item"
+         download-size="119"
+         install-size="271"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.model.persistence"
+         download-size="696"
+         install-size="1009"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.model.rule"
+         download-size="329"
+         install-size="973"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.model.script"
+         download-size="283"
+         install-size="821"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.model.sitemap"
+         download-size="285"
+         install-size="870"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.ui"
+         download-size="141"
+         install-size="194"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.continuation"
+         download-size="21"
+         install-size="38"
+         version="9.2.9.v20150224"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.osgi.boot"
+         download-size="122"
+         install-size="247"
+         version="9.2.9.v20150224"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.osgi.httpservice"
+         download-size="12"
+         install-size="20"
+         version="9.2.9.v20150224"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.security"
+         download-size="103"
+         install-size="208"
+         version="9.2.9.v20150224"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.server"
+         download-size="429"
+         install-size="907"
+         version="9.2.9.v20150224"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.servlet"
+         download-size="122"
+         install-size="260"
+         version="9.2.9.v20150224"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.util"
+         download-size="367"
+         install-size="710"
+         version="9.2.9.v20150224"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.webapp"
+         download-size="114"
+         install-size="251"
+         version="9.2.9.v20150224"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.xml"
+         download-size="50"
+         install-size="107"
+         version="9.2.9.v20150224"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.deploy"
+         download-size="57"
+         install-size="112"
+         version="9.2.9.v20150224"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.http"
+         download-size="112"
+         install-size="218"
+         version="9.2.9.v20150224"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.io"
+         download-size="115"
+         install-size="227"
+         version="9.2.9.v20150224"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.rewrite"
+         download-size="36"
+         install-size="64"
+         version="9.2.9.v20150224"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.model.item.runtime"
+         download-size="9"
+         install-size="11"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.model.persistence.runtime"
+         download-size="9"
+         install-size="11"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.model.rule.runtime"
+         download-size="33"
+         install-size="67"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.model.script.runtime"
+         download-size="18"
+         install-size="28"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.model.sitemap.runtime"
+         download-size="9"
+         install-size="11"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.model.thing.runtime"
+         download-size="9"
+         install-size="11"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.ui.icon"
+         download-size="14"
+         install-size="20"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.core.thing"
+         download-size="135"
+         install-size="298"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.model.thing"
+         download-size="226"
+         install-size="567"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.common"
+         download-size="104"
+         install-size="192"
+         version="3.6.200.v20130402-1505"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.supplement"
+         download-size="97"
+         install-size="179"
+         version="1.5.100.v20140428-1446"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.registry"
+         download-size="179"
+         install-size="372"
+         version="3.5.400.v20140428-1507"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.config.xml"
+         download-size="544"
+         install-size="669"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.core.binding.xml"
+         download-size="20"
+         install-size="37"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.core.thing.xml"
+         download-size="47"
+         install-size="110"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.storage.mapdb"
+         download-size="418"
+         install-size="454"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="com.google.gson"
+         download-size="205"
+         install-size="401"
+         version="2.3.1"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.config.discovery"
+         download-size="54"
+         install-size="110"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.jupnp"
+         download-size="712"
+         install-size="1448"
+         version="2.0.0.201503261118"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.io.transport.mdns"
+         download-size="222"
+         install-size="252"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.config.dispatch"
+         download-size="14"
+         install-size="21"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.io.rest.core"
+         download-size="61"
+         install-size="127"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="com.eclipsesource.jaxrs.jersey-all"
+         download-size="6012"
+         install-size="13343"
+         version="2.17.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.eclipsesource.jaxrs.provider.gson"
+         download-size="5"
+         install-size="8"
+         version="2.2.0.201503290743"
+         unpack="false"/>
+
+   <plugin
+         id="com.eclipsesource.jaxrs.publisher"
+         download-size="30"
+         install-size="57"
+         version="4.3.0.201503290743"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.io.transport.upnp"
+         download-size="19"
+         install-size="34"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.ui.classic"
+         download-size="230"
+         install-size="391"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.io.rest.sse"
+         download-size="33"
+         install-size="56"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.smarthome.io.console.eclipse"
+         download-size="12"
+         install-size="17"
+         version="0.8.0.201505251448"
+         unpack="false"/>
+
+</feature>

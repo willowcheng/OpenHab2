@@ -1,0 +1,77 @@
+2015-07-02 20:16:57.946 [ERROR] [.c.thing.internal.ThingManager] - Exception occured while calling handler: null
+java.lang.NullPointerException: null
+	at org.eclipse.smarthome.binding.yahooweather.handler.YahooWeatherHandler.startAutomaticRefresh(YahooWeatherHandler.java:101) ~[na:na]
+	at org.eclipse.smarthome.binding.yahooweather.handler.YahooWeatherHandler.initialize(YahooWeatherHandler.java:75) ~[na:na]
+	at org.eclipse.smarthome.core.thing.binding.BaseThingHandlerFactory.registerHandler(BaseThingHandlerFactory.java:116) ~[org.eclipse.smarthome.core.thing_0.8.0.201505251448.jar:na]
+	at org.eclipse.smarthome.core.thing.internal.ThingManager.registerHandler(ThingManager.java:385) [org.eclipse.smarthome.core.thing_0.8.0.201505251448.jar:na]
+	at org.eclipse.smarthome.core.thing.internal.ThingManager.registerHandler(ThingManager.java:352) [org.eclipse.smarthome.core.thing_0.8.0.201505251448.jar:na]
+	at org.eclipse.smarthome.core.thing.internal.ThingManager.thingAdded(ThingManager.java:281) [org.eclipse.smarthome.core.thing_0.8.0.201505251448.jar:na]
+	at org.eclipse.smarthome.core.thing.internal.ThingRegistryImpl.notifyTrackerAboutAllThingsAdded(ThingRegistryImpl.java:174) [org.eclipse.smarthome.core.thing_0.8.0.201505251448.jar:na]
+	at org.eclipse.smarthome.core.thing.internal.ThingRegistryImpl.addThingTracker(ThingRegistryImpl.java:41) [org.eclipse.smarthome.core.thing_0.8.0.201505251448.jar:na]
+	at org.eclipse.smarthome.core.thing.internal.ThingManager.activate(ThingManager.java:407) [org.eclipse.smarthome.core.thing_0.8.0.201505251448.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_45]
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:235) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:345) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:914) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:862) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:801) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:225) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:464) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.equinox.internal.ds.InstanceProcess.registerService(InstanceProcess.java:536) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:260) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:914) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:862) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:801) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:225) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:464) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.equinox.internal.ds.InstanceProcess.registerService(InstanceProcess.java:536) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:213) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.ds.Resolver.buildNewlySatisfied(Resolver.java:473) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.ds.Resolver.enableComponents(Resolver.java:217) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.ds.SCRManager.performWork(SCRManager.java:816) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.ds.SCRManager$QueuedJob.dispatch(SCRManager.java:783) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.ds.WorkThread.run(WorkThread.java:89) [org.eclipse.equinox.ds_1.4.200.v20131126-2331.jar:na]
+	at org.eclipse.equinox.internal.util.impl.tpt.threadpool.Executor.run(Executor.java:70) [org.eclipse.equinox.util_1.0.500.v20130404-1337.jar:na]
+2015-07-02 20:17:19.051 [ERROR] [d.YahooWeatherDiscoveryService] - Error accessing url 'http://freegeoip.net/json/' : freegeoip.net 
+2015-07-02 20:17:27.945 [WARN ] [.e.s.b.y.h.YahooWeatherHandler] - Error accessing Yahoo weather: weather.yahooapis.com
+2015-07-02 20:17:28.081 [INFO ] [ui.internal.servlet.PaperUIApp] - Started Paper UI at /ui
+2015-07-02 20:17:28.423 [INFO ] [.u.d.internal.DashboardService] - Started dashboard at /start
+2015-07-02 20:17:29.329 [INFO ] [.s.u.c.i.servlet.WebAppServlet] - Started Classic UI at /classicui
+2015-07-02 20:17:29.388 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v2.0.0, build alpha2).
+2015-07-02 20:17:29.449 [INFO ] [.e.s.m.c.i.ModelRepositoryImpl] - Loading model 'demo.sitemap'
+2015-07-02 20:17:29.677 [INFO ] [.e.s.m.c.i.ModelRepositoryImpl] - Loading model 'demo.things'
+2015-07-02 20:17:29.747 [WARN ] [.e.s.b.y.h.YahooWeatherHandler] - Error accessing Yahoo weather: weather.yahooapis.com
+2015-07-02 20:17:29.830 [INFO ] [.e.s.m.c.i.ModelRepositoryImpl] - Loading model 'logging.persist'
+2015-07-02 20:17:29.854 [INFO ] [.e.s.m.c.i.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
+2015-07-02 20:17:29.905 [INFO ] [.e.s.m.c.i.ModelRepositoryImpl] - Loading model 'demo.rules'
+2015-07-02 20:17:30.231 [INFO ] [.e.s.m.c.i.ModelRepositoryImpl] - Loading model 'demo.script'
+2015-07-02 20:17:30.326 [INFO ] [.e.s.m.c.i.ModelRepositoryImpl] - Loading model 'demo.items'
+2015-07-02 20:17:32.550 [INFO ] [.b.a.handler.AstroThingHandler] - Scheduled astro DailyJob at midnight for thing astro:sun:home
+2015-07-02 20:17:32.552 [INFO ] [.b.a.handler.AstroThingHandler] - Scheduled astro PositionalJob with interval of 60 seconds for thing astro:sun:home
+2015-07-02 20:18:28.018 [WARN ] [.e.s.b.y.h.YahooWeatherHandler] - Error accessing Yahoo weather: weather.yahooapis.com
+2015-07-02 20:18:29.751 [WARN ] [.e.s.b.y.h.YahooWeatherHandler] - Error accessing Yahoo weather: weather.yahooapis.com
+2015-07-02 20:19:28.016 [WARN ] [.e.s.b.y.h.YahooWeatherHandler] - Error accessing Yahoo weather: weather.yahooapis.com
+2015-07-02 20:19:29.756 [WARN ] [.e.s.b.y.h.YahooWeatherHandler] - Error accessing Yahoo weather: weather.yahooapis.com
+2015-07-02 20:20:28.017 [WARN ] [.e.s.b.y.h.YahooWeatherHandler] - Error accessing Yahoo weather: weather.yahooapis.com
+2015-07-02 20:20:29.757 [WARN ] [.e.s.b.y.h.YahooWeatherHandler] - Error accessing Yahoo weather: weather.yahooapis.com
+2015-07-02 20:20:38.844 [INFO ] [ui.internal.servlet.PaperUIApp] - Stopped Paper UI
+2015-07-02 20:20:38.845 [INFO ] [.u.d.internal.DashboardService] - Stopped dashboard
+2015-07-02 20:20:38.853 [INFO ] [.s.u.c.i.servlet.WebAppServlet] - Stopped Classic UI

@@ -1,0 +1,200 @@
+!SESSION 2015-07-02 20:16:42.323 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -console
+
+!ENTRY org.eclipse.osgi 4 0 2015-07-02 20:16:42.992
+!MESSAGE Bundle reference:file:org.eclipse.debug.core_3.9.1.v20140805-1629.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2015-07-02 20:16:42.997
+!MESSAGE Bundle reference:file:org.eclipse.jdt.core_3.10.2.v20150120-1634.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2015-07-02 20:16:42.997
+!MESSAGE Bundle reference:file:org.eclipse.jdt.launching_3.7.102.v20141111-0953.jar@4 not found.
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:16:47.666
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.core.persistence.manager. The reference is: Reference[name = ModelRepository, interface = org.eclipse.smarthome.model.core.ModelRepository, policy = dynamic, cardinality = 0..1, target = null, bind = setModelRepository, unbind = unsetModelRepository]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:16:47.666
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.core.persistence.manager. The reference is: Reference[name = PersistenceService, interface = org.eclipse.smarthome.core.persistence.PersistenceService, policy = dynamic, cardinality = 0..n, target = null, bind = addPersistenceService, unbind = removePersistenceService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:16:47.667
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.core.persistence.manager. The reference is: Reference[name = ItemRegistry, interface = org.eclipse.smarthome.core.items.ItemRegistry, policy = dynamic, cardinality = 0..1, target = null, bind = setItemRegistry, unbind = unsetItemRegistry]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:16:47.675
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.model.persistence.extensions. The reference is: Reference[name = PersistenceService, interface = org.eclipse.smarthome.core.persistence.PersistenceService, policy = dynamic, cardinality = 0..n, target = null, bind = addPersistenceService, unbind = removePersistenceService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:16:49.006
+!MESSAGE Could not bind a reference of component org.openhab.persistence.rrd4j. The reference is: Reference[name = ItemRegistry, interface = org.openhab.core.items.ItemRegistry, policy = dynamic, cardinality = 0..1, target = null, bind = setItemRegistry, unbind = unsetItemRegistry]
+
+!ENTRY org.eclipse.equinox.cm 4 0 2015-07-02 20:16:49.014
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.openhab.persistence.rrd4j.internal.RRD4jService.updated(RRD4jService.java:348)
+	at org.eclipse.equinox.internal.cm.ManagedServiceTracker$1.run(ManagedServiceTracker.java:276)
+	at org.eclipse.equinox.internal.cm.SerializedTaskQueue$1.run(SerializedTaskQueue.java:36)
+
+!ENTRY org.eclipse.emf.codegen 4 0 2015-07-02 20:16:49.316
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.emf.codegen [37]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.core; bundle-version="[3.5.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.emf.codegen.ecore 4 0 2015-07-02 20:16:49.317
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.emf.codegen.ecore [38]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.core; bundle-version="[3.5.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jdt.debug 4 0 2015-07-02 20:16:49.360
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.debug [54]
+  Unresolved requirement: Require-Bundle: org.eclipse.debug.core; bundle-version="[3.9.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:16:50.525
+!MESSAGE Could not bind a reference of component ConfigDescriptionRegistry. The reference is: Reference[name = ConfigDescriptionProvider, interface = org.eclipse.smarthome.config.core.ConfigDescriptionProvider, policy = dynamic, cardinality = 0..n, target = null, bind = addConfigDescriptionProvider, unbind = removeConfigDescriptionProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:16:56.943
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.core.binding.BindingInfoRegistry. The reference is: Reference[name = BindingInfoProvider, interface = org.eclipse.smarthome.core.binding.BindingInfoProvider, policy = dynamic, cardinality = 0..n, target = null, bind = addBindingInfoProvider, unbind = removeBindingInfoProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:16:57.022
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.core.itemregistry. The reference is: Reference[name = ItemProvider, interface = org.eclipse.smarthome.core.items.ItemProvider, policy = dynamic, cardinality = 0..n, target = null, bind = addProvider, unbind = removeProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:16:57.023
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.core.itemregistry. The reference is: Reference[name = EventPublisher, interface = org.eclipse.smarthome.core.events.EventPublisher, policy = dynamic, cardinality = 0..1, target = null, bind = setEventPublisher, unbind = unsetEventPublisher]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:16:57.024
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.core.itemregistry. The reference is: Reference[name = StateDescriptionProvider, interface = org.eclipse.smarthome.core.types.StateDescriptionProvider, policy = dynamic, cardinality = 0..n, target = null, bind = addStateDescriptionProvider, unbind = removeStateDescriptionProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:16:57.135
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.core.thing.ThingRegistry. The reference is: Reference[name = ThingProvider, interface = org.eclipse.smarthome.core.thing.ThingProvider, policy = dynamic, cardinality = 0..n, target = null, bind = addProvider, unbind = removeProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:16:57.138
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.core.thing.link.ItemChannelLinkRegistry. The reference is: Reference[name = ItemChannelLinkProvider, interface = org.eclipse.smarthome.core.thing.link.ItemChannelLinkProvider, policy = dynamic, cardinality = 0..n, target = null, bind = addProvider, unbind = removeProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:16:57.141
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.core.thing.type.ThingTypeRegistry. The reference is: Reference[name = ThingTypeProvider, interface = org.eclipse.smarthome.core.thing.binding.ThingTypeProvider, policy = dynamic, cardinality = 0..n, target = null, bind = addThingTypeProvider, unbind = removeThingTypeProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:16:57.152
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.core.thing.link.ItemThingLinkRegistry. The reference is: Reference[name = ItemThingLinkProvider, interface = org.eclipse.smarthome.core.thing.link.ItemThingLinkProvider, policy = dynamic, cardinality = 0..n, target = null, bind = addProvider, unbind = removeProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:17:28.003
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.ui. The reference is: Reference[name = ItemUIProvider, interface = org.eclipse.smarthome.ui.items.ItemUIProvider, policy = dynamic, cardinality = 0..n, target = null, bind = addItemUIProvider, unbind = removeItemUIProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:17:28.004
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.ui. The reference is: Reference[name = IconProvider, interface = org.eclipse.smarthome.ui.icon.IconProvider, policy = dynamic, cardinality = 0..n, target = null, bind = addIconProvider, unbind = removeIconProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:17:28.005
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.ui.chart. The reference is: Reference[name = ChartProvider, interface = org.eclipse.smarthome.ui.chart.ChartProvider, policy = dynamic, cardinality = 0..n, target = null, bind = addChartProvider, unbind = removeChartProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:17:28.022
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.ui.chart.defaultprovider. The reference is: Reference[name = PersistenceService, interface = org.eclipse.smarthome.core.persistence.PersistenceService, policy = dynamic, cardinality = 0..n, target = null, bind = addPersistenceService, unbind = removePersistenceService]
+
+!ENTRY org.eclipse.smarthome.binding.wemo 4 0 2015-07-02 20:17:28.272
+!MESSAGE [SCR] Method was not found: setUpnpIOService(...)
+	Details:
+	Problematic reference = Reference[name = UpnpIOService, interface = org.eclipse.smarthome.io.transport.upnp.UpnpIOService, policy = static, cardinality = 1..1, target = null, bind = setUpnpIOService, unbind = unsetUpnpIOService]
+	of service component = org.eclipse.smarthome.binding.wemo.internal.WemoHandlerFactory
+	component implementation class = org.eclipse.smarthome.binding.wemo.internal.WemoHandlerFactory
+	located in bundle with symbolic name = org.eclipse.smarthome.binding.wemo
+	bundle location = file:/Users/willowcheng/Development/OpenHab2/addons/org.eclipse.smarthome.binding.wemo-0.8.0-20150525.191631-140.jar
+
+!ENTRY org.eclipse.smarthome.binding.wemo 4 0 2015-07-02 20:17:28.273
+!MESSAGE [SCR] Method was not found: setUpnpIOService(...)
+	Details:
+	Problematic reference = Reference[name = UpnpIOService, interface = org.eclipse.smarthome.io.transport.upnp.UpnpIOService, policy = static, cardinality = 1..1, target = null, bind = setUpnpIOService, unbind = unsetUpnpIOService]
+	of service component = org.eclipse.smarthome.binding.wemo.internal.WemoHandlerFactory
+	component implementation class = org.eclipse.smarthome.binding.wemo.internal.WemoHandlerFactory
+	located in bundle with symbolic name = org.eclipse.smarthome.binding.wemo
+	bundle location = file:/Users/willowcheng/Development/OpenHab2/addons/org.eclipse.smarthome.binding.wemo-0.8.0-20150525.191631-140.jar
+
+!ENTRY org.eclipse.smarthome.binding.wemo 2 0 2015-07-02 20:17:28.277
+!MESSAGE [SCR] ComponentReference.bind(): bind method 'setUpnpIOService' is not found or it is not accessible!
+	Details:
+	Problematic reference = Reference[name = UpnpIOService, interface = org.eclipse.smarthome.io.transport.upnp.UpnpIOService, policy = static, cardinality = 1..1, target = null, bind = setUpnpIOService, unbind = unsetUpnpIOService]
+	of service component = org.eclipse.smarthome.binding.wemo.internal.WemoHandlerFactory
+	component implementation class = org.eclipse.smarthome.binding.wemo.internal.WemoHandlerFactory
+	located in bundle with symbolic name = org.eclipse.smarthome.binding.wemo
+	bundle location = file:/Users/willowcheng/Development/OpenHab2/addons/org.eclipse.smarthome.binding.wemo-0.8.0-20150525.191631-140.jar
+
+!ENTRY org.eclipse.equinox.ds 4 0 2015-07-02 20:17:28.278
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.binding.wemo.internal.WemoHandlerFactory. The reference is: Reference[name = UpnpIOService, interface = org.eclipse.smarthome.io.transport.upnp.UpnpIOService, policy = static, cardinality = 1..1, target = null, bind = setUpnpIOService, unbind = unsetUpnpIOService]
+
+!ENTRY org.eclipse.equinox.ds 4 0 2015-07-02 20:17:28.279
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.binding.wemo.internal.WemoHandlerFactory. The reference is: Reference[name = UpnpIOService, interface = org.eclipse.smarthome.io.transport.upnp.UpnpIOService, policy = static, cardinality = 1..1, target = null, bind = setUpnpIOService, unbind = unsetUpnpIOService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:17:28.304
+!MESSAGE Could not bind a reference of component org.openhab.core.compat1x.actionservicefactory. The reference is: Reference[name = ActionService, interface = org.openhab.core.scriptengine.action.ActionService, policy = dynamic, cardinality = 0..n, target = null, bind = addActionService, unbind = removeActionService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:17:28.313
+!MESSAGE Could not bind a reference of component org.openhab.core.compat1x.autoupdateproviderdelegate. The reference is: Reference[name = AutoUpdateBindingProvider, interface = org.openhab.core.autoupdate.AutoUpdateBindingProvider, policy = dynamic, cardinality = 0..n, target = null, bind = addAutoUpdateBindingProvider, unbind = removeAutoUpdateBindingProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:17:28.323
+!MESSAGE Could not bind a reference of component org.openhab.core.compat1x.chartproviderfactory. The reference is: Reference[name = ChartProvider, interface = org.openhab.ui.chart.ChartProvider, policy = dynamic, cardinality = 0..n, target = null, bind = addChartProvider, unbind = removeChartProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2015-07-02 20:17:28.362
+!MESSAGE Could not bind a reference of component org.openhab.core.compat1x.ttsservicefactory. The reference is: Reference[name = TTSService, interface = org.openhab.io.multimedia.tts.TTSService, policy = dynamic, cardinality = 0..n, target = null, bind = addTTSService, unbind = removeTTSService]
+
+!ENTRY org.eclipse.smarthome.io.rest.sitemap 4 0 2015-07-02 20:17:29.363
+!MESSAGE [SCR] Method was not found: setModelRepository(...)
+	Details:
+	Problematic reference = Reference[name = ModelRepository, interface = org.eclipse.smarthome.model.core.ModelRepository, policy = dynamic, cardinality = 1..1, target = null, bind = setModelRepository, unbind = unsetModelRepository]
+	of service component = org.eclipse.smarthome.io.rest.sitemap
+	component implementation class = org.eclipse.smarthome.io.rest.sitemap.internal.SitemapResource
+	located in bundle with symbolic name = org.eclipse.smarthome.io.rest.sitemap
+	bundle location = initial@reference:file:plugins/org.eclipse.smarthome.io.rest.sitemap_0.8.0.201505251448.jar
+
+!ENTRY org.eclipse.smarthome.io.rest.sitemap 4 0 2015-07-02 20:17:29.363
+!MESSAGE [SCR] Method was not found: setModelRepository(...)
+	Details:
+	Problematic reference = Reference[name = ModelRepository, interface = org.eclipse.smarthome.model.core.ModelRepository, policy = dynamic, cardinality = 1..1, target = null, bind = setModelRepository, unbind = unsetModelRepository]
+	of service component = org.eclipse.smarthome.io.rest.sitemap
+	component implementation class = org.eclipse.smarthome.io.rest.sitemap.internal.SitemapResource
+	located in bundle with symbolic name = org.eclipse.smarthome.io.rest.sitemap
+	bundle location = initial@reference:file:plugins/org.eclipse.smarthome.io.rest.sitemap_0.8.0.201505251448.jar
+
+!ENTRY org.eclipse.smarthome.io.rest.sitemap 2 0 2015-07-02 20:17:29.364
+!MESSAGE [SCR] ComponentReference.bind(): bind method 'setModelRepository' is not found or it is not accessible!
+	Details:
+	Problematic reference = Reference[name = ModelRepository, interface = org.eclipse.smarthome.model.core.ModelRepository, policy = dynamic, cardinality = 1..1, target = null, bind = setModelRepository, unbind = unsetModelRepository]
+	of service component = org.eclipse.smarthome.io.rest.sitemap
+	component implementation class = org.eclipse.smarthome.io.rest.sitemap.internal.SitemapResource
+	located in bundle with symbolic name = org.eclipse.smarthome.io.rest.sitemap
+	bundle location = initial@reference:file:plugins/org.eclipse.smarthome.io.rest.sitemap_0.8.0.201505251448.jar
+
+!ENTRY org.eclipse.equinox.ds 4 0 2015-07-02 20:17:29.365
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.io.rest.sitemap. The reference is: Reference[name = ModelRepository, interface = org.eclipse.smarthome.model.core.ModelRepository, policy = dynamic, cardinality = 1..1, target = null, bind = setModelRepository, unbind = unsetModelRepository]
+
+!ENTRY org.eclipse.equinox.ds 4 0 2015-07-02 20:17:29.367
+!MESSAGE Could not bind a reference of component org.eclipse.smarthome.io.rest.sitemap. The reference is: Reference[name = ModelRepository, interface = org.eclipse.smarthome.model.core.ModelRepository, policy = dynamic, cardinality = 1..1, target = null, bind = setModelRepository, unbind = unsetModelRepository]
